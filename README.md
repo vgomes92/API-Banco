@@ -12,16 +12,27 @@ Após baixar o projeto configurar a conexão com o banco de dados.
 Para isso no arquivo .env na pasta raiz do projeto modificar as seguintes linhas:
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1 
+
 DB_PORT=3306
+
 DB_DATABASE=api_banco
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
+onde:
+
 DB_HOST - Endereço do banco de dados.
+
 DB_PORT - Porta do banco de dados.
+
 DB_DATABASE=api_banco - Nome do Banco de dados.
+
 DB_USERNAME - Usuário do banco de dados.
+
 DB_PASSWORD - Senha do banco de dados.
 
 ### 1. Criando o Banco de Dados
