@@ -8,7 +8,8 @@ O objetivo deste documento é apresentar o projeto de criação de uma api para 
 Este projeto foi criado em php com a utilização do framework laravel e banco de dados MySql.
 
 ### 1. Configurações
-Após baixar o projeto configurar a conexão com o banco de dados.
+- Após baixar o projeto configurar a conexão com o banco de dados.
+
 Para isso no arquivo .env na pasta raiz do projeto modificar as seguintes linhas:
 
 DB_CONNECTION=mysql
@@ -34,6 +35,12 @@ DB_DATABASE=api_banco - Nome do Banco de dados.
 DB_USERNAME - Usuário do banco de dados.
 
 DB_PASSWORD - Senha do banco de dados.
+
+- Instalar o composer
+
+Para instalar o composer Executar no Prompt de Comando na pasta do projeto o seguinte comando:
+
+composer install
 
 ### 1. Criando o Banco de Dados
 Para a criação do banco de dados utilizando o laravel, seguir os seguintes passos:
@@ -87,7 +94,9 @@ http://localhost:8000/api/extrato/{num_conta}/{data_inicial}/{data_final}
 Deve-se passar o número da conta a data inicial e final no formato YYYY-mm-dd, onde:
 
 YYYY - Ano
+
 mm - mes
+
 dd - dia
 
 Esse endpoint retorna um json com todas as transações realizadas no período solicitado.
