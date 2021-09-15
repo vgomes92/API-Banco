@@ -12,6 +12,8 @@ Este projeto foi criado em php com a utilização do framework laravel e banco d
 
 Para isso no arquivo .env na pasta raiz do projeto modificar as seguintes linhas:
 
+(Obs: ao baixar o projeto do github o arquivo .env.example deve ser renomeado para .env)
+
 DB_CONNECTION=mysql
 
 DB_HOST=127.0.0.1 
@@ -75,7 +77,7 @@ http://localhost:8000/api/saldo/{num_conta}: mostra o saldo em todas as moedas q
 
 http://localhost:8000/api/saldo/{num_conta}/{moeda}: mostra o saldo na moeda solicitada, realizando a conversão de acordo com a taxa PTAX de conversão, caso a conta possua saldo em outras moedas.
 
-Ambos os casos retonan um json com as informações do saldo da conta.
+Ambos os casos retonam um json com as informações do saldo da conta.
 
 - Saque: O terceiro endpoint é o saque, que pode ser acessado na seguinte url:
 
